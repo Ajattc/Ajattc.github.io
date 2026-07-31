@@ -16,6 +16,6 @@ This project has 4 main tasks to simulate regular operation, listed in terms of 
 | B    |Blink/Sensor Read | 50          | 109                | 142                    | 10 ms    | 11       | 1    |
 | C    |Motor_control     | 25          | 1,033              | 1,343                  | 10 ms    | 8        | 1    |
 | D    |Logging           | 200         | 27,679             | 35,983                 | 50 ms    | 4        | 1    |
-#### Task Table
+#### Other Tasks
 Along with these tasks, there is a web server that serves to log important data like Worst Case Execution times and iterations of each of the 4 tasks. The webserver runs of core 0 to prevent interference with vital system operation. 
 There is an accompanying button ISR for initiating an emergency stop(red) using a task notification and collecting a VFD data sample(black) using a counting semaphore. Each has their own bottom half ISR that is blocked until the semaphore is given.
