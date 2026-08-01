@@ -3,6 +3,11 @@
 ## Project Overview
 This is a themed theoretical application for my Real Time Systems class. The project connects RTOS to industrial motor control drivers found in the Orlando MCO Airport's Trams. This is not fully fleshed out with realistic data, but more of an exercise of designing deadlines and real time communications between ISR's and tasks.
 
+## Important Links
+Wokwi Project: https://wokwi.com/projects/471103920277954561
+GitHub Pages: https://ajattc.github.io/
+Youtube Video URL: https://youtu.be/Vozy7jiy3sM?si=Hmy82CkNsLV6xZVf
+## LinkedIn: https://www.linkedin.com/in/adrian-james-/
 ### Theme
 An industrial system that aims to control drivers and sensors, built to demonstrate real-time emergency and safety driver operations for a Control Engineer role.
 
@@ -54,3 +59,16 @@ There is an accompanying button ISR for initiating an emergency stop(red) using 
 | E-Stop Failure | Missed Button Interrupt | Critical | Dedicated immediate ISR | ... |
 | Sensor Disconnect | Hardware Failure | Moderate | Timeout handling in Task B | ... |
 | Motor Data Mismatch | Corrupted Data | Moderate | Mutexes and Strict Deadlines | ... |
+
+## Reflection
+
+FINAL REFLECTION
+
+#### What I would do differently
+If I could do it all again, I would create more tailored functions and organize my tasks and calculations better since I did not initially anticipate this project to build. As more and more tasks and features were added, I found it harder and harder to pick up where I left off and would get lost in the code. I also did not use nearly enough readable comments to actually help guide future me through what each part of the program did, which caused a lot of frustration. So, I would organize my functions and create clear and concise divisions and sections for my tasks, ISR's, webserver, and variables.
+
+#### What was harder than expected
+Since I do not come from a coding background(I actually hate coding), it was honestly difficult to get over the learning curve of learning a new-ish language. While FreeRTOS is an extension of C programming, which i thought i knew, it still introduces massive amounts of new functions, syntaxes and possibilities for how you can implement it. This made these applications much harder to actually implement since I would often be lost on how to correctly format my semaphores, mutexes, and tasks.
+
+#### The most valuable thing I learned
+One of the most valuable things I will take with me to future industry prospects is the design of Real Time Systems and task mapping. More importantly, understanding the role of AI in generating and debugging code for these programs. I personally do not know many coding languages, but AI knows essentially all of them and can create large bulks of code to perform what I need and allow me to fine tune it to my project. Task scheduling and utilization of RTOS primitives were among the most important aspects of this class i learned and truly put into context how multi-threaded and complex systems do work.
