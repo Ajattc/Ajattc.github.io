@@ -23,7 +23,7 @@ My final project builds off of Application 4 and coordination of Interrupt Servi
 ## Demo Video
 *(To embed a YouTube video, replace `YOUR_VIDEO_ID` with the actual ID from your YouTube link. If using Wokwi, you can paste the Wokwi embed code here instead.)*
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Vozy7jiy3sM?si=Mp_RFb0iQ1-Vwx5C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="1020" height="730" src="https://www.youtube.com/embed/Vozy7jiy3sM?si=Mp_RFb0iQ1-Vwx5C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ---
 
