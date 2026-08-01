@@ -33,12 +33,12 @@ This project has 4 main tasks to simulate regular operation, listed in terms of 
 
 | Task | Function | Period (ms) | WCET measured (µs) | WCET + 30% margin (µs) | Deadline | Priority | Core |
 |---|---|---:|---:|---:|---:|---:|---:|
-| A | Control_loop | 10 | 294 | 382 | 2 ms | 15 | 1 |
-| B | Blink/Sensor Read | 50 | 109 | 142 | 5 ms | 11 | 1 |
-| C | Motor_control | 25 | 1,033 | 1,343 | 5 ms | 8 | 1 |
-| D | Logging | 200 | 27,679 | 35,983 | 50 ms | 4 | 1 |
+| A | Control_loop | 10 | 1,281 | 1,665 | 2 ms | 15 | 1 |
+| B | Blink/Sensor Read | 50 | 886 | 1,151 | 5 ms | 11 | 1 |
+| C | Motor_control | 25 | 3,238 | 4,267 | 5 ms | 8 | 1 |
+| D | Logging | 200 | 29,009 | 37,711 | 50 ms | 4 | 1 |
 
-
+![WCET Utilization](./WCETCalc.png)
 ### Other Tasks and ISRs
 Along with these tasks, there is a web server that serves to log important data like Worst Case Execution times and iterations of each of the 4 tasks. The webserver runs of core 0 to prevent interference with vital system operation. 
 
