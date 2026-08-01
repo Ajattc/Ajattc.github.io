@@ -16,7 +16,7 @@ My final project builds off of Application 4 and coordination of Interrupt Servi
 ## System Architecture
 *(Upload your architecture diagram image to your GitHub repository and replace `diagram.png` with your actual file name)*
 
-![System Architecture Diagram](./diagram.png)
+![System Architecture Diagram](./TaskDiagram.png)
 
 ---
 
