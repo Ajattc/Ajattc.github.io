@@ -14,7 +14,7 @@ My final project builds off of Application 4 and coordination of Interrupt Servi
 ---
 
 ## System Architecture
-*(Upload your architecture diagram image to your GitHub repository and replace `diagram.png` with your actual file name)*
+
 
 ![System Architecture Diagram](./TaskDiagram.png)
 
@@ -33,9 +33,9 @@ This project has 4 main tasks to simulate regular operation, listed in terms of 
 
 | Task | Function | Period (ms) | WCET measured (µs) | WCET + 30% margin (µs) | Deadline | Priority | Core |
 |---|---|---:|---:|---:|---:|---:|---:|
-| A | Control_loop | 10 | 294 | 382 | 3 ms | 15 | 1 |
-| B | Blink/Sensor Read | 50 | 109 | 142 | 10 ms | 11 | 1 |
-| C | Motor_control | 25 | 1,033 | 1,343 | 10 ms | 8 | 1 |
+| A | Control_loop | 10 | 294 | 382 | 2 ms | 15 | 1 |
+| B | Blink/Sensor Read | 50 | 109 | 142 | 5 ms | 11 | 1 |
+| C | Motor_control | 25 | 1,033 | 1,343 | 5 ms | 8 | 1 |
 | D | Logging | 200 | 27,679 | 35,983 | 50 ms | 4 | 1 |
 
 
@@ -47,10 +47,10 @@ There is an accompanying button ISR for initiating an emergency stop(red) using 
 ---
 
 ## Hazard Analysis & Industry Standard Mapping
-*(Below is a template table for your hazard analysis. Fill in the specific hazards related to your motor controllers and emergency stops, along with any standards your professor requires, such as IEC 61508 or DO-178C)*
 
 | Hazard | Potential Cause | Severity | RTOS Mitigation Strategy | Standard Mapping |
 |--------|-----------------|----------|--------------------------|------------------|
 | Task A Deadline Miss | High Priority Starvation | Critical | Strict priority assignments | IEC 61508 SIL 3 |
 | E-Stop Failure | Missed Button Interrupt | Critical | Dedicated immediate ISR | ... |
 | Sensor Disconnect | Hardware Failure | Moderate | Timeout handling in Task B | ... |
+| Motor Data Mismatch | Corrupted Data | Moderate | Mutexes and Strict Deadlines | ... |
